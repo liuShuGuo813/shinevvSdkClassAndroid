@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg"
+    android:orientation="vertical"
+    tools:context=".OneActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/img_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加入课堂"
+                android:textColor="@color/whitesmoke"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/img_join" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="#2d343e" />
+
+            <EditText
+                android:id="@+id/room_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/img_bg_edit"
+                android:hint="@string/room_number"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#abb2bc"
+                android:textColorHint="#7d93aa" />
+
+            <EditText
+                android:id="@+id/room_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/img_bg_edit"
+                android:hint="@string/room_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#abb2bc"
+                android:textColorHint="#7d93aa" />
+
+            <EditText
+                android:id="@+id/nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/img_bg_edit"
+                android:hint="@string/nick_name"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#abb2bc"
+                android:textColorHint="#7d93aa" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="#2d343e" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_teacher"
+                    android:textColor="#abb2bc"
+                    android:textSize="13sp" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/user_role"
+                    android:layout_width="64dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    toggle:tbOffBorderColor="#15161a"
+                    toggle:tbOffColor="#15161a"
+                    toggle:tbOnColor="#15161a"
+                    toggle:tbSpotColor="#d3d0c9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_student"
+                    android:textColor="#506070"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/vvroom_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#abb2bc"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/img_join_line" />
+
+            <TextView
+                android:id="@+id/mLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:padding="10dp"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textColor="@color/whitesmoke"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/login_pg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

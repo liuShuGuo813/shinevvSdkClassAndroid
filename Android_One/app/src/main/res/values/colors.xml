@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31353f</color>
+    <color name="colorPrimaryDark">#1b1b1b</color>
+    <color name="colorAccent">#FFFFF0</color>
+
+    <color name="colorConnected">#aa30bd18</color>
+    <color name="colorConnecting">#aaFFA500</color>
+    <color name="colorDisconnected">#aaaaaa80</color>
+
+    <color name="colorSecondary">#353535</color>
+    <color name="colorSecondaryDark">#444444</color>
+
+</resources>
